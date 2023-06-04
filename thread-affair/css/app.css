@@ -305,6 +305,27 @@ a {
   font-size: 32px;
 }
 
+.header-cart a {
+  position: relative;
+}
+
+.header-cart .cart-qty {
+  background-color: #ff6b6b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  width: 21px;
+  height: 21px;
+  padding: 0 4px;
+  border-radius: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  top: -10px;
+  left: 24px;
+  position: absolute;
+}
+
 .header-primary {
   text-align: center;
 }
@@ -361,25 +382,110 @@ a {
 .footer-primary {
   color: #aeaeae;
   text-transform: uppercase;
+  background: #1b1927 url(../images/banners/banner-06.jpg) no-repeat right
+    center / 477px;
+  margin-bottom: 16px;
+  padding: 50px;
+  color: #aeaeae;
   font-weight: 300;
 }
 
-.footer-support {
-  text-transform: uppercase;
-  color: #aeaeae;
+.footer-menu {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 40px;
 }
 
-.footer-support ul i {
+.footer-menu ul {
+  width: 128px;
+}
+
+.footer-support a {
+  display: block;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer-support {
+  display: inline-block;
+  margin-right: 136px;
+}
+
+.footer-support ul {
+  display: flex;
+  gap: 36px;
+  text-align: center;
+}
+
+.footer-support [class*='fa-'] {
   color: #ff6b6b;
+  font-size: 36px;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .footer-contact {
-  color: #aeaeae;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.footer-contact h1 {
+  margin-bottom: 8px;
+}
+
+.footer-contact h1 span {
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-contact p {
+  text-transform: initial;
+  line-height: 22px;
+}
+
+.footer-contact a[href^='mailto:'] {
+  color: #ff6b6b;
 }
 
 .footer-secondary {
   text-align: center;
-  margin-top: 22px;
+  margin-bottom: 48px;
 }
 
+.footer-secondary p {
+  margin-bottom: 8px;
+}
+
+.footer-secondary p img {
+  vertical-align: bottom;
+}
 /* /footer */
+
+/* homepage */
+.content-main section header {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content-main section header h1 {
+  font-size: 40px;
+  color: #292929;
+}
+
+/* do not use this selector */
+.content-main section header h1 span {
+  font-weight: 500;
+}
+
+.home-payment ul {
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+/* /homepage */
